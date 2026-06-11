@@ -1,0 +1,55 @@
+# ════ SEKRETY — sekcja krytyczna ════
+local.settings.json
+*.settings.json
+!*.settings.json.example
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+secrets/
+
+# ════ PYTHON / VENV ════
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# ════ AZURE FUNCTIONS (lokalny runtime) ════
+bin/
+obj/
+.python_packages/
+.azurefunctions/
+azurite-data/
+__azurite_db*__.json
+__blobstorage__/
+__queuestorage__/
+
+# ════ DATABRICKS ════
+.databricks/
+.databricks-connect
+*.dbc
+
+# ════ DANE — kod tak, dane nie ════
+*.parquet
+*.csv
+*.json
+!src/functions/host.json
+data/
+
+# ════ POWER BI (tryb Import = plik ZAWIERA dane) ════
+*.pbix
+*.pbit
+
+# ════ NOTATNIKI / IDE / SYSTEM ════
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
